@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns1:Script ns1:Name="DC" xmlns:ns1="http://www.conformiq.com/xsd/XMLScripter2.xsd">
+    <ns1:Dependencies/>
+    <ns1:Configuration>
+        <ns1:Property ns1:Name="Automatic Test Case Naming" ns1:CreatorValue="true"/>
+        <ns1:Property ns1:Name="Conformiq version" ns1:CreatorValue="5.1.0.82833"/>
+        <ns1:Property ns1:Name="Customizations.Dump Conformiq Designer configuration" ns1:CreatorValue="true"/>
+        <ns1:Property ns1:Name="Customizations.Dump debug information" ns1:CreatorValue="false"/>
+        <ns1:Property ns1:Name="Customizations.Highlight actions in code" ns1:CreatorValue="true"/>
+        <ns1:Property ns1:Name="Customizations.Reproducible" ns1:CreatorValue="false"/>
+        <ns1:Property ns1:Name="Enable Model Profiling" ns1:CreatorValue="false"/>
+        <ns1:Property ns1:Name="Enable perturbation support" ns1:CreatorValue="false"/>
+        <ns1:Property ns1:Name="Lookahead Depth" ns1:CreatorValue="0"/>
+        <ns1:Property ns1:Name="Main.Generated XML file" ns1:CreatorValue="C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\xml\TestSuite.xml"/>
+        <ns1:Property ns1:Name="Main.Write output format XSD" ns1:CreatorValue="false"/>
+        <ns1:Property ns1:Name="Maximum Communication Delay" ns1:CreatorValue="0"/>
+        <ns1:Property ns1:Name="OSI Methodology Support" ns1:CreatorValue="false"/>
+        <ns1:Property ns1:Name="Only Finalized Runs" ns1:CreatorValue="disabled"/>
+        <ns1:Property ns1:Name="Perturbation support/Apply default data selection" ns1:CreatorValue="false"/>
+        <ns1:Property ns1:Name="Perturbation support/Number of test variants" ns1:CreatorValue="0"/>
+        <ns1:Property ns1:Name="Perturbation support/Perturbation seed" ns1:CreatorValue="1009"/>
+        <ns1:Property ns1:Name="Postprocessing.Post process command" ns1:CreatorValue=""/>
+        <ns1:Property ns1:Name="Postprocessing.Use XSLT" ns1:CreatorValue="false"/>
+        <ns1:Property ns1:Name="Postprocessing.XSLT stylesheet" ns1:CreatorValue=""/>
+        <ns1:Property ns1:Name="Project" ns1:CreatorValue="nopcommerce"/>
+        <ns1:Property ns1:Name="Project Path" ns1:CreatorValue="C:\Users\IB2k21003\Desktop\workgopi\nopcommerce"/>
+        <ns1:Property ns1:Name="Require Conversion for Interoperability Testing" ns1:CreatorValue="false"/>
+        <ns1:Property ns1:Name="Scripter Path" ns1:CreatorValue="C:\Program Files\Conformiq\Creator 4.2 With Transformer 1.5\Adaptation\XMLScripter2.jar"/>
+        <ns1:Property ns1:Name="Stop At Full Coverage" ns1:CreatorValue="false"/>
+        <ns1:Property ns1:Name="Stop At Full Requirement Coverage" ns1:CreatorValue="false"/>
+        <ns1:Property ns1:Name="Test Case Name Format" ns1:CreatorValue="Test Case "/>
+        <ns1:Property ns1:Name="Test Case Numbering Offset" ns1:CreatorValue="0"/>
+        <ns1:Property ns1:Name="Test Case Selection" ns1:CreatorValue="FEWEST_TESTS"/>
+    </ns1:Configuration>
+    <ns1:TestCase ns1:Description="" ns1:Digest="f2f9ace360db441974fd8040c1424334d5061d8f" ns1:Id="1" ns1:Name="INVALIDLOGIN_TC" ns1:Probability="0.0" ns1:Priority="1">
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Initial" ns1:ShortName="Initial" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorCustomAction ns1:Direction="INPUT">
+            <ns1:TextualRendering>
+                <ns1:FieldReference ns1:FieldName="url"/>
+            </ns1:TextualRendering>
+            <ns1:Structure ns1:Name="Enterurl">
+                <ns1:Field ns1:Name="url" ns1:Type="STRING" ns1:TypeName="String">
+                    <ns1:CreatorValue>
+                        <ns1:Scalar>http://nopcommerce.testplant.com/</ns1:Scalar>
+                    </ns1:CreatorValue>
+                </ns1:Field>
+            </ns1:Structure>
+            <ns1:Interface ns1:Name="User"/>
+        </ns1:CreatorCustomAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Initial -&gt; Activity 'Url'" ns1:ShortName="Initial -&gt; Activity 'Url'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'Url'" ns1:ShortName="Activity 'Url'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'Url'/Action #1: CA: &quot;Enterurl&quot;/Input Constraint: 'Enterurl' Action Data Value" ns1:ShortName="Input Constraint: 'Enterurl' Action Data Value" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'Url'/Action #1: CA: &quot;Enterurl&quot;" ns1:ShortName="Action #1: CA: &quot;Enterurl&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Activity 'Url' -&gt; Activity 'Logscreen'" ns1:ShortName="Activity 'Url' -&gt; Activity 'Logscreen'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'Logscreen'" ns1:ShortName="Activity 'Logscreen'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="DISPLAY">
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="Logg" ns1:Type="SCREEN"/>
+                <ns1:GuiContainerValue/>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'Logscreen'/Action #1: DS: 'Logg' Screen" ns1:ShortName="Action #1: DS: 'Logg' Screen" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="CLICK">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="Login" ns1:Type="HYPERLINK"/>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Activity 'Logscreen' -&gt; Activity 'LogIN'" ns1:ShortName="Activity 'Logscreen' -&gt; Activity 'LogIN'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'LogIN'" ns1:ShortName="Activity 'LogIN'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #1: CL: 'Login' Hyperlink" ns1:ShortName="Action #1: CL: 'Login' Hyperlink" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="DISPLAY">
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LogIn" ns1:Type="FORM"/>
+                        <ns1:GuiContainerValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Email" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Email"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Password" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Password"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                        </ns1:GuiContainerValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LOG IN" ns1:Type="BUTTON">
+                            <ns1:Annotation ns1:Key="selenium:xpath" ns1:Value="/html/body/div[5]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/input"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Login" ns1:Type="HYPERLINK"/>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #2: DS: 'LogIn' Screen" ns1:ShortName="Action #2: DS: 'LogIn' Screen" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="FILL">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="FORM"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Email" ns1:Type="TEXTBOX">
+                            <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Email"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:CreatorValue>
+                                <ns1:Scalar>balde@gmail.com</ns1:Scalar>
+                            </ns1:CreatorValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Password" ns1:Type="TEXTBOX">
+                            <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Password"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:CreatorValue>
+                                <ns1:Scalar>Jntu@812</ns1:Scalar>
+                            </ns1:CreatorValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form/Values matching Input Constraint/Email = &quot;balde@gmail.com&quot;" ns1:ShortName="Email = &quot;balde@gmail.com&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form/Values matching Input Constraint/Password = &quot;Jntu@812&quot;" ns1:ShortName="Password = &quot;Jntu@812&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form/Input Constraint: 'LogIn' Form Value" ns1:ShortName="Input Constraint: 'LogIn' Form Value" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form" ns1:ShortName="Action #3: FF: 'LogIn' Form" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="CLICK">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LOG IN" ns1:Type="BUTTON">
+                    <ns1:Annotation ns1:Key="selenium:xpath" ns1:Value="/html/body/div[5]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/input"/>
+                </ns1:Widget>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #4: CB: 'LOG IN' Button" ns1:ShortName="Action #4: CB: 'LOG IN' Button" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Activity 'LogIN' -&gt; Decision 'Decision Node 1'" ns1:ShortName="Activity 'LogIN' -&gt; Decision 'Decision Node 1'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Decision 'Decision Node 1'" ns1:ShortName="Decision 'Decision Node 1'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Conditional Branching/Decision Coverage/Diagram 'nop' . Decision 'Decision Node 1'/(Result of Action #3: FF: 'LogIn' Form in Activity 'LogIN' = 'LogIn' Form Value) matches none of the case values" ns1:ShortName="(Result of Action #3: FF: 'LogIn' Form in Activity 'LogIN' = 'LogIn' Form Value) matches none of the case values" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Decision 'Decision Node 1' -- [else] -&gt; Activity 'InvalidLogin'" ns1:ShortName="Decision 'Decision Node 1' -- [else] -&gt; Activity 'InvalidLogin'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'InvalidLogin'" ns1:ShortName="Activity 'InvalidLogin'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="DISPLAY">
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LogIn" ns1:Type="FORM"/>
+                        <ns1:GuiContainerValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Email" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Email"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Password" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Password"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                        </ns1:GuiContainerValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LOG IN" ns1:Type="BUTTON">
+                            <ns1:Annotation ns1:Key="selenium:xpath" ns1:Value="/html/body/div[5]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/input"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Login" ns1:Type="HYPERLINK"/>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'InvalidLogin'/Action #1: DS: 'LogIn' Screen" ns1:ShortName="Action #1: DS: 'LogIn' Screen" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:NameFragment ns1:Name="INVALIDLOGIN_TC"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'InvalidLogin'/Action #2: NT: &quot;INVALIDLOGIN_TC&quot;" ns1:ShortName="Action #2: NT: &quot;INVALIDLOGIN_TC&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+    </ns1:TestCase>
+    <ns1:TestCase ns1:Description="" ns1:Digest="863f35775cb0667d88ffd601eccf434b281916e9" ns1:Id="2" ns1:Name="INVALIDLOGIN_TC [2]" ns1:Probability="0.0" ns1:Priority="1">
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Initial" ns1:ShortName="Initial" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorCustomAction ns1:Direction="INPUT">
+            <ns1:TextualRendering>
+                <ns1:FieldReference ns1:FieldName="url"/>
+            </ns1:TextualRendering>
+            <ns1:Structure ns1:Name="Enterurl">
+                <ns1:Field ns1:Name="url" ns1:Type="STRING" ns1:TypeName="String">
+                    <ns1:CreatorValue>
+                        <ns1:Scalar>http://nopcommerce.testplant.com/</ns1:Scalar>
+                    </ns1:CreatorValue>
+                </ns1:Field>
+            </ns1:Structure>
+            <ns1:Interface ns1:Name="User"/>
+        </ns1:CreatorCustomAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Initial -&gt; Activity 'Url'" ns1:ShortName="Initial -&gt; Activity 'Url'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'Url'" ns1:ShortName="Activity 'Url'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'Url'/Action #1: CA: &quot;Enterurl&quot;/Input Constraint: 'Enterurl' Action Data Value" ns1:ShortName="Input Constraint: 'Enterurl' Action Data Value" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'Url'/Action #1: CA: &quot;Enterurl&quot;" ns1:ShortName="Action #1: CA: &quot;Enterurl&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Activity 'Url' -&gt; Activity 'Logscreen'" ns1:ShortName="Activity 'Url' -&gt; Activity 'Logscreen'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'Logscreen'" ns1:ShortName="Activity 'Logscreen'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="DISPLAY">
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="Logg" ns1:Type="SCREEN"/>
+                <ns1:GuiContainerValue/>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'Logscreen'/Action #1: DS: 'Logg' Screen" ns1:ShortName="Action #1: DS: 'Logg' Screen" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="CLICK">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="Login" ns1:Type="HYPERLINK"/>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Activity 'Logscreen' -&gt; Activity 'LogIN'" ns1:ShortName="Activity 'Logscreen' -&gt; Activity 'LogIN'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'LogIN'" ns1:ShortName="Activity 'LogIN'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #1: CL: 'Login' Hyperlink" ns1:ShortName="Action #1: CL: 'Login' Hyperlink" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="DISPLAY">
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LogIn" ns1:Type="FORM"/>
+                        <ns1:GuiContainerValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Email" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Email"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Password" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Password"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                        </ns1:GuiContainerValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LOG IN" ns1:Type="BUTTON">
+                            <ns1:Annotation ns1:Key="selenium:xpath" ns1:Value="/html/body/div[5]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/input"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Login" ns1:Type="HYPERLINK"/>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #2: DS: 'LogIn' Screen" ns1:ShortName="Action #2: DS: 'LogIn' Screen" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="FILL">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="FORM"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Email" ns1:Type="TEXTBOX">
+                            <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Email"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:CreatorValue>
+                                <ns1:Scalar>gopirishi@gmail.com</ns1:Scalar>
+                            </ns1:CreatorValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Password" ns1:Type="TEXTBOX">
+                            <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Password"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:CreatorValue>
+                                <ns1:Scalar>varshi@12</ns1:Scalar>
+                            </ns1:CreatorValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form/Values matching Input Constraint/Email = &quot;gopirishi@gmail.com&quot;" ns1:ShortName="Email = &quot;gopirishi@gmail.com&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form/Values matching Input Constraint/Password = &quot;varshi@12&quot;" ns1:ShortName="Password = &quot;varshi@12&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form/Input Constraint: 'LogIn' Form Value" ns1:ShortName="Input Constraint: 'LogIn' Form Value" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form" ns1:ShortName="Action #3: FF: 'LogIn' Form" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="CLICK">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LOG IN" ns1:Type="BUTTON">
+                    <ns1:Annotation ns1:Key="selenium:xpath" ns1:Value="/html/body/div[5]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/input"/>
+                </ns1:Widget>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #4: CB: 'LOG IN' Button" ns1:ShortName="Action #4: CB: 'LOG IN' Button" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Activity 'LogIN' -&gt; Decision 'Decision Node 1'" ns1:ShortName="Activity 'LogIN' -&gt; Decision 'Decision Node 1'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Decision 'Decision Node 1'" ns1:ShortName="Decision 'Decision Node 1'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Conditional Branching/Decision Coverage/Diagram 'nop' . Decision 'Decision Node 1'/(Result of Action #3: FF: 'LogIn' Form in Activity 'LogIN' = 'LogIn' Form Value) matches none of the case values" ns1:ShortName="(Result of Action #3: FF: 'LogIn' Form in Activity 'LogIN' = 'LogIn' Form Value) matches none of the case values" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Decision 'Decision Node 1' -- [else] -&gt; Activity 'InvalidLogin'" ns1:ShortName="Decision 'Decision Node 1' -- [else] -&gt; Activity 'InvalidLogin'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'InvalidLogin'" ns1:ShortName="Activity 'InvalidLogin'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="DISPLAY">
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LogIn" ns1:Type="FORM"/>
+                        <ns1:GuiContainerValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Email" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Email"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Password" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Password"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                        </ns1:GuiContainerValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LOG IN" ns1:Type="BUTTON">
+                            <ns1:Annotation ns1:Key="selenium:xpath" ns1:Value="/html/body/div[5]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/input"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Login" ns1:Type="HYPERLINK"/>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'InvalidLogin'/Action #1: DS: 'LogIn' Screen" ns1:ShortName="Action #1: DS: 'LogIn' Screen" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:NameFragment ns1:Name="INVALIDLOGIN_TC"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'InvalidLogin'/Action #2: NT: &quot;INVALIDLOGIN_TC&quot;" ns1:ShortName="Action #2: NT: &quot;INVALIDLOGIN_TC&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+    </ns1:TestCase>
+    <ns1:TestCase ns1:Description="" ns1:Digest="7829591617bf0aaee2346922d3c0919b947e1a7e" ns1:Id="3" ns1:Name="LOGOUT_TC" ns1:Probability="0.0" ns1:Priority="1">
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Initial" ns1:ShortName="Initial" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorCustomAction ns1:Direction="INPUT">
+            <ns1:TextualRendering>
+                <ns1:FieldReference ns1:FieldName="url"/>
+            </ns1:TextualRendering>
+            <ns1:Structure ns1:Name="Enterurl">
+                <ns1:Field ns1:Name="url" ns1:Type="STRING" ns1:TypeName="String">
+                    <ns1:CreatorValue>
+                        <ns1:Scalar>http://nopcommerce.testplant.com/</ns1:Scalar>
+                    </ns1:CreatorValue>
+                </ns1:Field>
+            </ns1:Structure>
+            <ns1:Interface ns1:Name="User"/>
+        </ns1:CreatorCustomAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Initial -&gt; Activity 'Url'" ns1:ShortName="Initial -&gt; Activity 'Url'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'Url'" ns1:ShortName="Activity 'Url'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'Url'/Action #1: CA: &quot;Enterurl&quot;/Input Constraint: 'Enterurl' Action Data Value" ns1:ShortName="Input Constraint: 'Enterurl' Action Data Value" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'Url'/Action #1: CA: &quot;Enterurl&quot;" ns1:ShortName="Action #1: CA: &quot;Enterurl&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Activity 'Url' -&gt; Activity 'Logscreen'" ns1:ShortName="Activity 'Url' -&gt; Activity 'Logscreen'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'Logscreen'" ns1:ShortName="Activity 'Logscreen'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="DISPLAY">
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="Logg" ns1:Type="SCREEN"/>
+                <ns1:GuiContainerValue/>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'Logscreen'/Action #1: DS: 'Logg' Screen" ns1:ShortName="Action #1: DS: 'Logg' Screen" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="CLICK">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="Login" ns1:Type="HYPERLINK"/>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Activity 'Logscreen' -&gt; Activity 'LogIN'" ns1:ShortName="Activity 'Logscreen' -&gt; Activity 'LogIN'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'LogIN'" ns1:ShortName="Activity 'LogIN'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #1: CL: 'Login' Hyperlink" ns1:ShortName="Action #1: CL: 'Login' Hyperlink" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="DISPLAY">
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LogIn" ns1:Type="FORM"/>
+                        <ns1:GuiContainerValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Email" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Email"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Password" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Password"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                        </ns1:GuiContainerValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LOG IN" ns1:Type="BUTTON">
+                            <ns1:Annotation ns1:Key="selenium:xpath" ns1:Value="/html/body/div[5]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/input"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Login" ns1:Type="HYPERLINK"/>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #2: DS: 'LogIn' Screen" ns1:ShortName="Action #2: DS: 'LogIn' Screen" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="FILL">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="FORM"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Email" ns1:Type="TEXTBOX">
+                            <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Email"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:CreatorValue>
+                                <ns1:Scalar>gopirishi@gmail.com</ns1:Scalar>
+                            </ns1:CreatorValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Password" ns1:Type="TEXTBOX">
+                            <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Password"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:CreatorValue>
+                                <ns1:Scalar>Jntu@812</ns1:Scalar>
+                            </ns1:CreatorValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form/Values matching Input Constraint/Email = &quot;gopirishi@gmail.com&quot;" ns1:ShortName="Email = &quot;gopirishi@gmail.com&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form/Values matching Input Constraint/Password = &quot;Jntu@812&quot;" ns1:ShortName="Password = &quot;Jntu@812&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form/Input Constraint: 'LogIn' Form Value" ns1:ShortName="Input Constraint: 'LogIn' Form Value" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #3: FF: 'LogIn' Form" ns1:ShortName="Action #3: FF: 'LogIn' Form" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="CLICK">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LOG IN" ns1:Type="BUTTON">
+                    <ns1:Annotation ns1:Key="selenium:xpath" ns1:Value="/html/body/div[5]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/input"/>
+                </ns1:Widget>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'LogIN'/Action #4: CB: 'LOG IN' Button" ns1:ShortName="Action #4: CB: 'LOG IN' Button" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Activity 'LogIN' -&gt; Decision 'Decision Node 1'" ns1:ShortName="Activity 'LogIN' -&gt; Decision 'Decision Node 1'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Decision 'Decision Node 1'" ns1:ShortName="Decision 'Decision Node 1'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Data Objects/Diagram 'nop' . Decision 'Decision Node 1'/Value in Equals (=) Condition: 'LogIn' Form Value" ns1:ShortName="Value in Equals (=) Condition: 'LogIn' Form Value" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Conditional Branching/Decision Coverage/Diagram 'nop' . Decision 'Decision Node 1'/(Result of Action #3: FF: 'LogIn' Form in Activity 'LogIN' = 'LogIn' Form Value) is true" ns1:ShortName="(Result of Action #3: FF: 'LogIn' Form in Activity 'LogIN' = 'LogIn' Form Value) is true" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Decision 'Decision Node 1' -- true -&gt; Activity 'Home'" ns1:ShortName="Decision 'Decision Node 1' -- true -&gt; Activity 'Home'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'Home'" ns1:ShortName="Activity 'Home'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="DISPLAY">
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="Home" ns1:Type="SCREEN"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Shopping Cart" ns1:Type="HYPERLINK"/>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Log out" ns1:Type="HYPERLINK"/>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'Home'/Action #1: DS: 'Home' Screen" ns1:ShortName="Action #1: DS: 'Home' Screen" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="CLICK">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="Home" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="Shopping Cart" ns1:Type="HYPERLINK"/>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Activity 'Home' -&gt; Activity 'ShoppingCart'" ns1:ShortName="Activity 'Home' -&gt; Activity 'ShoppingCart'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'ShoppingCart'" ns1:ShortName="Activity 'ShoppingCart'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'ShoppingCart'/Action #1: CL: 'Shopping Cart' Hyperlink" ns1:ShortName="Action #1: CL: 'Shopping Cart' Hyperlink" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="DISPLAY">
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="Shopping Cart" ns1:Type="SCREEN"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Shopping Cart" ns1:Type="FORM"/>
+                        <ns1:GuiContainerValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Search Store" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Small-searchterm"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                        </ns1:GuiContainerValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="SEARCH" ns1:Type="BUTTON"/>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'ShoppingCart'/Action #2: DS: 'Shopping Cart' Screen" ns1:ShortName="Action #2: DS: 'Shopping Cart' Screen" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="FILL">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="Shopping Cart" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="Shopping Cart" ns1:Type="FORM"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Search Store" ns1:Type="TEXTBOX">
+                            <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Small-searchterm"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:CreatorValue>
+                                <ns1:DontCare/>
+                            </ns1:CreatorValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'ShoppingCart'/Action #3: FF: 'Shopping Cart' Form" ns1:ShortName="Action #3: FF: 'Shopping Cart' Form" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="CLICK">
+            <ns1:GuiContext>
+                <ns1:Widget ns1:Name="Shopping Cart" ns1:Type="SCREEN"/>
+            </ns1:GuiContext>
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="SEARCH" ns1:Type="BUTTON"/>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'ShoppingCart'/Action #4: CB: 'SEARCH' Button" ns1:ShortName="Action #4: CB: 'SEARCH' Button" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Control Flows/Diagram 'nop'/Activity 'ShoppingCart' -&gt; Activity 'Logout'" ns1:ShortName="Activity 'ShoppingCart' -&gt; Activity 'Logout'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Nodes/Diagram 'nop'/Activity 'Logout'" ns1:ShortName="Activity 'Logout'" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:CreatorGuiAction ns1:Action="DISPLAY">
+            <ns1:WidgetValue>
+                <ns1:Widget ns1:Name="LogIn" ns1:Type="SCREEN"/>
+                <ns1:GuiContainerValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LogIn" ns1:Type="FORM"/>
+                        <ns1:GuiContainerValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Email" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Email"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                            <ns1:WidgetValue>
+                                <ns1:Widget ns1:Name="Password" ns1:Type="TEXTBOX">
+                                    <ns1:Annotation ns1:Key="selenium:id" ns1:Value="Password"/>
+                                </ns1:Widget>
+                                <ns1:GuiBasicValue>
+                                    <ns1:CreatorValue>
+                                        <ns1:DontCare/>
+                                    </ns1:CreatorValue>
+                                    <ns1:Status>
+                                        <ns1:DontCare/>
+                                    </ns1:Status>
+                                </ns1:GuiBasicValue>
+                            </ns1:WidgetValue>
+                        </ns1:GuiContainerValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="LOG IN" ns1:Type="BUTTON">
+                            <ns1:Annotation ns1:Key="selenium:xpath" ns1:Value="/html/body/div[5]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/input"/>
+                        </ns1:Widget>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                    <ns1:WidgetValue>
+                        <ns1:Widget ns1:Name="Login" ns1:Type="HYPERLINK"/>
+                        <ns1:GuiBasicValue>
+                            <ns1:Status>
+                                <ns1:DontCare/>
+                            </ns1:Status>
+                        </ns1:GuiBasicValue>
+                    </ns1:WidgetValue>
+                </ns1:GuiContainerValue>
+            </ns1:WidgetValue>
+        </ns1:CreatorGuiAction>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'Logout'/Action #1: DS: 'LogIn' Screen" ns1:ShortName="Action #1: DS: 'LogIn' Screen" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+        <ns1:NameFragment ns1:Name="LOGOUT_TC"/>
+        <ns1:Checkpoint ns1:Name="Activity Diagrams/Action Invocations/Diagram 'nop' . Activity 'Logout'/Action #2: NT: &quot;LOGOUT_TC&quot;" ns1:ShortName="Action #2: NT: &quot;LOGOUT_TC&quot;" ns1:Status="Covered" ns1:Timestamp="0.000000000" ns1:Type="UsualType"/>
+    </ns1:TestCase>
+    <ns1:UncoveredCheckpoints/>
+</ns1:Script>

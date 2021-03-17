@@ -1,0 +1,89 @@
+*** Settings ***
+Documentation    WARNING! This file has been automatically generated using the Conformiq <Robot Framework Scripter> scripting backend. PLEASE DO NOT EDIT.
+Library    Selenium2Library
+Resource          Conformiq RobotFwk Utils library.txt
+*** Keywords ***
+Url nop
+    [Arguments]    ${url FIELD}    
+      ${PERFORM Enterurl-Enterurl_locator}      Load Excel Data    Objects    PERFORM Enterurl-Enterurl_locator      Locator
+
+
+
+    Input Text		${PERFORM Enterurl-Enterurl_locator}     ${url FIELD}
+
+
+
+Logscreen nop
+
+
+
+
+
+	BuiltIn.No Operation
+
+
+
+LogIN nop
+    [Arguments]    ${Email TEXTBOX}    ${Password TEXTBOX}    
+      ${LogIn-LogInSCREENLogInSCREENLoginHYPERLINK_locator}      Load Excel Data    Objects    LogIn-LogInSCREENLogInSCREENLoginHYPERLINK_locator      Locator
+      ${LogIn-LogInSCREENLogInFORMEmailTEXTBOX_locator}      Load Excel Data    Objects    LogIn-LogInSCREENLogInFORMEmailTEXTBOX_locator      Locator
+      ${LogIn-LogInSCREENLogInFORMPasswordTEXTBOX_locator}      Load Excel Data    Objects    LogIn-LogInSCREENLogInFORMPasswordTEXTBOX_locator      Locator
+      ${LogIn-LogInSCREENLOG INBUTTON_locator}      Load Excel Data    Objects    LogIn-LogInSCREENLOG INBUTTON_locator      Locator
+
+
+
+    Click Element		${LogIn-LogInSCREENLogInSCREENLoginHYPERLINK_locator}     
+    Wait Until Element Is Visible 		${LogIn-LogInSCREENLogInFORMEmailTEXTBOX_locator}     5
+    Input Text		${LogIn-LogInSCREENLogInFORMEmailTEXTBOX_locator}     ${Email TEXTBOX}
+    Wait Until Element Is Visible 		${LogIn-LogInSCREENLogInFORMPasswordTEXTBOX_locator}     5
+    Input Text		${LogIn-LogInSCREENLogInFORMPasswordTEXTBOX_locator}     ${Password TEXTBOX}
+    Wait Until Element Is Visible 		${LogIn-LogInSCREENLOG INBUTTON_locator}     5
+    Click Element		${LogIn-LogInSCREENLOG INBUTTON_locator}     
+
+
+
+InvalidLogin nop
+
+
+
+
+
+	BuiltIn.No Operation
+
+
+
+Home nop
+
+
+
+
+
+	BuiltIn.No Operation
+
+
+
+ShoppingCart nop
+    [Arguments]    ${Search Store TEXTBOX}    
+      ${Home-HomeSCREENHomeSCREENShopping CartHYPERLINK_locator}      Load Excel Data    Objects    Home-HomeSCREENHomeSCREENShopping CartHYPERLINK_locator      Locator
+      ${Shopping Cart-Shopping CartSCREENShopping CartFORMSearch StoreTEXTBOX_locator}      Load Excel Data    Objects    Shopping Cart-Shopping CartSCREENShopping CartFORMSearch StoreTEXTBOX_locator      Locator
+      ${Shopping Cart-Shopping CartSCREENSEARCHBUTTON_locator}      Load Excel Data    Objects    Shopping Cart-Shopping CartSCREENSEARCHBUTTON_locator      Locator
+
+
+
+    Click Element		${Home-HomeSCREENHomeSCREENShopping CartHYPERLINK_locator}     
+    Wait Until Element Is Visible 		${Shopping Cart-Shopping CartSCREENShopping CartFORMSearch StoreTEXTBOX_locator}     5
+    Input Text		${Shopping Cart-Shopping CartSCREENShopping CartFORMSearch StoreTEXTBOX_locator}     ${Search Store TEXTBOX}
+    Wait Until Element Is Visible 		${Shopping Cart-Shopping CartSCREENSEARCHBUTTON_locator}     5
+    Click Element		${Shopping Cart-Shopping CartSCREENSEARCHBUTTON_locator}     
+
+
+
+Logout nop
+
+
+
+
+
+	BuiltIn.No Operation
+
+

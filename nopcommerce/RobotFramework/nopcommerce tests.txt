@@ -1,0 +1,27 @@
+*** Settings ***
+Documentation    WARNING! This file has been automatically generated using the Conformiq <Robot Framework Scripter> scripting backend. PLEASE DO NOT EDIT.
+Library    Selenium2Library
+Library    DateTime
+Resource          nopcommerce keywords.txt
+Resource          Conformiq RobotFwk Utils library.txt
+
+*** Variables ***
+
+*** Test Cases ***
+INVALIDLOGIN_TC
+    Url nop       http://nopcommerce.testplant.com/
+    Logscreen nop
+    LogIN nop       balde@gmail.com       Jntu@812
+    InvalidLogin nop
+INVALIDLOGIN_TC [2]
+    Url nop       http://nopcommerce.testplant.com/
+    Logscreen nop
+    LogIN nop       gopirishi@gmail.com       varshi@12
+    InvalidLogin nop
+LOGOUT_TC
+    Url nop       http://nopcommerce.testplant.com/
+    Logscreen nop
+    LogIN nop       gopirishi@gmail.com       Jntu@812
+    Home nop
+    ShoppingCart nop       [Don't care]
+    Logout nop

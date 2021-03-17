@@ -1,0 +1,60 @@
+This file shows the changes in the scripter output from the previous rendering:
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+Newly Added Element: ScreenName: "LogIn" Object Name: "Email" Element type: "textbox"
+Newly Added Element: ScreenName: "LogIn" Object Name: "Password" Element type: "textbox"
+Newly Added Element: ScreenName: "LogIn" Object Name: "LOG IN" Element type: "button"
+Newly Added Element: ScreenName: "Home" Object Name: "Currency" Element type: "dropdown"
+Newly Added Element: ScreenName: "Home" Object Name: "Shopping Cart" Element type: "hyperlink"
+Newly Added Element: ScreenName: "Home" Object Name: "Log out" Element type: "hyperlink"
+Newly Added Element: ScreenName: "Shopping Cart" Object Name: "Continue shopping" Element type: "button"
+Newly Added Element: ScreenName: "Shopping Cart" Object Name: "Search Store" Element type: "textbox"
+Newly Added Element: ScreenName: "Shopping Cart" Object Name: "SEARCH" Element type: "button"
+Newly Added Element: ScreenName: "Log out" Object Name: "" Element type: ""
+Newly Added Element: ScreenName: "Home" Object Name: "Shopping Cart" Element type: "hyperlink"
+Newly Added Element: ScreenName: "Home" Object Name: "Log out" Element type: "hyperlink"
+Newly Added Element: ScreenName: "LogIn" Object Name: "Email" Element type: "textbox"
+Newly Added Element: ScreenName: "LogIn" Object Name: "Password" Element type: "textbox"
+Newly Added Element: ScreenName: "LogIn" Object Name: "LOG IN" Element type: "button"
+Newly Added Element: ScreenName: "Home" Object Name: "Currency" Element type: "dropdown"
+Newly Added Element: ScreenName: "Home" Object Name: "Shopping Cart" Element type: "hyperlink"
+Newly Added Element: ScreenName: "Home" Object Name: "Log out" Element type: "hyperlink"
+Newly Added Element: ScreenName: "Shopping Cart" Object Name: "Continue shopping" Element type: "button"
+Newly Added Element: ScreenName: "Shopping Cart" Object Name: "Search Store" Element type: "textbox"
+Newly Added Element: ScreenName: "Shopping Cart" Object Name: "SEARCH" Element type: "button"
+Newly Added Element: ScreenName: "Log out" Object Name: "" Element type: ""
+Newly Added Element: ScreenName: "Home" Object Name: "Shopping Cart" Element type: "hyperlink"
+Newly Added Element: ScreenName: "Home" Object Name: "Log out" Element type: "hyperlink"
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java
+***********************************************************
+Test Cases Published into Scripter Output Folder=C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\Selenium Java

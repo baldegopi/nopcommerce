@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel TestSuite" parallel="methods" thread-count="2">
+ <test name="Parallel TestCase" >
+    <classes>
+      <class name="testsuite.INVALIDLOGIN_TC"/>
+      <class name="testsuite.INVALIDLOGIN_TC__2_"/>
+      <class name="testsuite.LOGOUT_TC"/>
+    </classes>
+ </test>
+</suite>

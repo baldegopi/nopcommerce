@@ -1,0 +1,13 @@
+BPT::Test Plan
+url::https://qc-122.conformiq.com/qcbin/
+username::siteadmin
+password::$CQPasswordEncoding4$t5qWlb6BCFpv6v43f2n4CAsuB+f406gMaRZEDwKnZdQ=
+domain::DEFAULT
+project::Alexis
+testplan::
+component::
+FLOW::
+DEEP_SCAN::false
+use exisitng::false
+xml fodler::null
+xml file name::null
