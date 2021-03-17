@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.conformiq:ConformiqProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.conformiq="http://www.conformiq.com/models/3/project" propertiesVersion="1001">
+  <designConfigurations name="DC" id="ef64e4db81be649835706cd0dc1c0b32">
+    <scripterConfigurations jarPath="Conformiq_Designer/QCALMScripter.jar" pluginName="QCALMScripter" enabled="true">
+      <scripterPropertyCategories name="Access Configuration">
+        <categoryProperties key="Url" value="https://qc-122.conformiq.com/qcbin/"/>
+        <categoryProperties key="Username" value="siteadmin"/>
+        <categoryProperties key="Password" value="$CQPasswordEncoding4$t5qWlb6BCFpv6v43f2n4CAsuB+f406gMaRZEDwKnZdQ="/>
+        <categoryProperties key="Client ID"/>
+        <categoryProperties key="API key secret"/>
+        <categoryProperties key="Domain" value="DEFAULT"/>
+        <categoryProperties key="Project" value="Alexis"/>
+      </scripterPropertyCategories>
+      <scripterPropertyCategories name="Test Rendering Settings">
+        <categoryProperties key="Mapping file"/>
+        <categoryProperties key="Custom field mapping file" value="CustomFieldMappings.xls"/>
+        <categoryProperties key="Export as ASCIIMSC" value="false"/>
+        <categoryProperties key="Merge steps with no verification point(s) with following step(s)" value="false"/>
+        <categoryProperties key="Merge steps with no action(s) with preceding step(s)" value="false"/>
+        <categoryProperties key="Omit information about where a requirement was included" value="true"/>
+      </scripterPropertyCategories>
+      <scripterPropertyCategories name="Mapping">
+        <categoryProperties key="Custom mapping source"/>
+      </scripterPropertyCategories>
+      <scripterPropertyCategories name="Textual messages">
+        <categoryProperties key="No action" value="No action"/>
+        <categoryProperties key="No errors can be observed at the SUT" value="No errors can be observed at the SUT"/>
+        <categoryProperties key="External circumstance prefix" value="External circumstance: "/>
+      </scripterPropertyCategories>
+      <scripterPropertyCategories name="Upload Settings">
+        <categoryProperties key="Test case status" value="Design"/>
+        <categoryProperties key="Test plan target folder" value="Ideabytes_Demo\Gp"/>
+        <categoryProperties key="Create test plan target folder" value="true"/>
+        <categoryProperties key="Use trash can folder for incompatible tests" value="false"/>
+        <categoryProperties key="Add tests to test lab" value="false"/>
+        <categoryProperties key="Test lab target folder"/>
+        <categoryProperties key="Create test lab target folder"/>
+      </scripterPropertyCategories>
+      <scripterPropertyCategories name="Advanced Settings">
+        <categoryProperties key="Always connect through the COM interface" value="false"/>
+      </scripterPropertyCategories>
+      <scripterPropertyCategories name="Test Case Selection">
+        <categoryProperties key="Report requirement coverage only from test case body" value="true"/>
+      </scripterPropertyCategories>
+      <scripterPropertyCategories name="Troubleshooting">
+        <categoryProperties key="Log file"/>
+        <categoryProperties key="Show debug messages on Progress Panel" value="false"/>
+        <categoryProperties key="Log scripter revision" value="true"/>
+        <categoryProperties key="Log entry pattern layout"/>
+        <categoryProperties key="Debug level" value="INFO"/>
+      </scripterPropertyCategories>
+    </scripterConfigurations>
+  </designConfigurations>
+  <projectProperties key="CreatorDataDistribution" value="false"/>
+  <projectProperties key="IntelligentTestCaseNaming" value="true"/>
+  <projectProperties key="LookAheadDepth" value="0"/>
+  <projectProperties key="MainActivityDiagram" value="model/nop.ad"/>
+  <projectProperties key="OnlyFinalizedRuns" value="false"/>
+  <projectProperties key="TestCaseIndexOffset" value="0"/>
+  <projectProperties key="TestCaseNamePrefix" value="Test Case "/>
+  <projectProperties key="TestCaseOrdering" value="CHRONOLOGICAL_SHORTEST_TEST_FIRST"/>
+  <projectProperties key="TestGenTimeLimit" value="10"/>
+  <projectProperties key="TestGenerationStopCondition" value="REPEATABLE_TEST_SET"/>
+  <projectProperties key="TestSelection" value="FEWEST_TESTS"/>
+  <requirementProviders xmi:id="_VP7sIIb-Eeu5ZIuJsct7Ow" identifier="com.conformiq.designer.extensions.alm" name="HP QC/ALM Requirements (Alexis:Requirements\Parabank Requirements)">
+    <properties key="alm.api.key.secret" value="$CQPasswordEncoding4$fN4D4b1iD9aAGH5tpTXrYA=="/>
+    <properties key="alm.client.id"/>
+    <properties key="alm.domain" value="DEFAULT"/>
+    <properties key="alm.location" value="https://qc-122.conformiq.com/qcbin/"/>
+    <properties key="alm.password" value="$CQPasswordEncoding4$07AjNkQB5uipDV3RSVDEX6fwd9OlOI+ghNWRDCcJdXJqOnHVjTPo2Q7WLBza7qkVfCIabP7+7iGhku5lZfKNCw=="/>
+    <properties key="alm.project" value="Alexis"/>
+    <properties key="alm.requirement.fields" value="rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAB3CAAAABAAAAAAeA=="/>
+    <properties key="alm.requirement.folder" value="rO0ABXNyABNqYXZhLnV0aWwuQXJyYXlMaXN0eIHSHZnHYZ0DAAFJAARzaXpleHAAAAACdwQAAAACdAAMUmVxdWlyZW1lbnRzdAAVUGFyYWJhbmsgUmVxdWlyZW1lbnRzeA=="/>
+    <properties key="alm.requirement.namingtemplate" value="${fields[&quot;Name&quot;]}"/>
+    <properties key="alm.username" value="siteadmin"/>
+    <properties key="aml.requirement.priorities" value="rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAB3CAAAABAAAAAAeA=="/>
+  </requirementProviders>
+</com.conformiq:ConformiqProject>

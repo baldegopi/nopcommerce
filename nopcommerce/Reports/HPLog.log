@@ -1,0 +1,95 @@
+Wed Mar 17 14:36:22 IST 2021
+ INFO: Initializing natural language excel with default mappings
+
+Wed Mar 17 14:36:22 IST 2021
+ INFO: Finished natural language excel
+
+Wed Mar 17 14:36:22 IST 2021
+ INFO: Selected option is Test plan with description steps
+
+Wed Mar 17 14:36:22 IST 2021
+ INFO: Start converting
+Wed Mar 17 14:36:22 IST 2021
+ INFO: Parsed properties!
+Wed Mar 17 14:36:23 IST 2021
+ INFO: Connecting!
+Wed Mar 17 14:36:28 IST 2021
+ INFO: Connected to https://qc-122.conformiq.com/qcbin/
+Wed Mar 17 14:36:28 IST 2021
+ INFO: The version of the server is assumed to be 12.2
+Wed Mar 17 14:36:28 IST 2021
+ INFO: Connected!
+Wed Mar 17 14:36:28 IST 2021
+ INFO: Checking entity folders
+Wed Mar 17 14:36:36 IST 2021
+ INFO: Converting with skipwords
+Wed Mar 17 14:36:38 IST 2021
+ INFO: Project Name :bpt
+
+------------------Test Analysis Report Begins----------
+
+Test Case Optimization:
+-------------------------------------------------------
+Tests Processed :
+Test 1: INVALIDLOGIN_TC : 1 occurrence 
+Test 2: INVALIDLOGIN_TC [2] : 1 occurrence 
+Test 3: LOGOUT_TC : 1 occurrence 
+
+ - Reduction in Tests:  0%
+
+Input Action/Test Step Optimization :
+-------------------------------------------------------
+Total No of Test Steps : 0
+
+Verification Action/Expected result Optimization :
+-------------------------------------------------------
+Total No of Step Expected Results :0
+
+Generated Keywords:
+-------------------------------------------------------
+Total No of Keywords :8
+Keyword 1: http://nopcommerce.testplant.com/ : 1
+Keyword 2: Click Shopping Cart hyperlink in the Home screen : 1
+Keyword 3: Click LOG IN button in the LogIn screen 1 : 1
+Keyword 4: Click SEARCH button in the Shopping Cart screen : 1
+Keyword 5: Click LOG IN button in the LogIn screen : 1
+Keyword 6: Fill LogIn form in LogIn screen     entering  in Email textbox     entering  in : 1
+Keyword 7: Click Login hyperlink in the LogIn screen : 1
+Keyword 8: Fill Shopping Cart form in Shopping Cart screen : 1
+
+Requirement Coverage:
+-------------------------------------------------------
+Total No of Covered Requirements :0
+
+-------------------------------------------------------
+
+Test suite optimization during import:
+ - Reduction in Tests:  0%
+
+------------------Test Analysis Report Ends------------
+
+Wed Mar 17 14:36:39 IST 2021
+ INFO: testsuite Current Tests , allElements size : 9
+Wed Mar 17 14:36:39 IST 2021
+ INFO: updateConnections allElements size: 12
+Wed Mar 17 14:36:39 IST 2021
+ INFO: updateConnections allConnectors size: 11
+Wed Mar 17 14:36:39 IST 2021
+ INFO: UpdateDecisiontoEvent allElements size: 13
+Wed Mar 17 14:36:39 IST 2021
+ INFO: UpdateDecisiontoEvent allConnectors size: 12
+Wed Mar 17 14:36:39 IST 2021
+ INFO: CreateActivities allElements size: 13
+Wed Mar 17 14:36:39 IST 2021
+ INFO: CreateActivities allConnectors size: 13
+Wed Mar 17 14:36:39 IST 2021
+ INFO: 6 custom actions reduced in 19
+Wed Mar 17 14:36:39 IST 2021
+ INFO: Test Plan convertion result: true
+Test suite optimization during import:
+ - Reduction in Tests:  0%
+
+Wed Mar 17 14:36:39 IST 2021
+ INFO: Closing connection.
+Wed Mar 17 14:36:39 IST 2021
+ INFO: Finally block

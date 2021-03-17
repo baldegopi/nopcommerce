@@ -1,0 +1,124 @@
+*** Settings ***
+Documentation     WARNING! This file has been automatically created using the Conformiq <Robot Framework Scripter> scripting backend. PLEASE DO NOT EDIT.
+Library           Selenium2Library
+Library           String
+Library           Screenshot
+Library           ExcelLibrary
+Library           OperatingSystem
+Library           Collections
+Library           robot.api.logger
+
+*** Variables ***
+${sFileName}      ${CURDIR}\\..\\..\\Object Repository.xls
+${sTestDataExcelName}    ${CURDIR}\\..\\..\\TestData.xls
+
+*** Keywords ***
+Load Excel Data
+    [Arguments]    ${SheetName}    ${TestCasename}    ${TestCaseColumn}
+    Open given Excel file    ${sFileName}
+    #Passing SheetName,RowDetails and ColumnName, to fetch data
+    ${sData}    Get data from Excel with given column    ${SheetName}    ${TestCasename}    ${TestCaseColumn}
+    Log    ${sData}    console=yes
+    [Return]    ${sData}
+
+Get data from Excel with given column
+    [Arguments]    ${sSheetName}    ${sTestCaseNo}    ${sColumnName}
+    Comment    log    ${sColumnName}    console=yes
+    ${colCount}    Get Column Count    ${sSheetName}
+    : FOR    ${y}    IN RANGE    0    ${colCount}
+    \    ${header}    Read Cell Data By Coordinates    ${sSheetName}    ${y}    0
+    \    #Check if this is the given header
+    \    Run Keyword If    "${header}"=="${sColumnName}"    Set Suite Variable    ${colNum}    ${y}
+    \    Run Keyword If    "${header}"=="LocatorType"    Set Suite Variable    ${locatorColNo}    ${y}
+    log    ${colNum}
+    log    ${locatorColNo}
+    #Get the total rows in the Sheet
+    ${iTotalRows}    ExcelLibrary.Get Row Count    ${sSheetName}
+    : FOR    ${iRowNo}    IN RANGE    1    ${iTotalRows}+1
+    \    ${TC_Num}    Read Cell Data By Coordinates    ${sSheetName}    0    ${iRowNo}
+    \    #Incase TestCase No is same , fetch the data from same row and given column No
+    \    ${locator}    Run Keyword If    "${sTestCaseNo}"=="${TC_Num}"    ExcelLibrary.Read Cell Data By Coordinates    ${sSheetName}    ${colNum}
+    \    ...    ${iRowNo}
+    \    ${locatorType}    Run Keyword If    "${sTestCaseNo}"=="${TC_Num}"    ExcelLibrary.Read Cell Data By Coordinates    ${sSheetName}    ${locatorColNo}
+    \    ...    ${iRowNo}
+    \    ${sSearchedData}    Catenate    SEPARATOR==    ${locatorType}    ${locator}
+    \    Run Keyword If    "${sTestCaseNo}"=="${TC_Num}"    Exit For Loop
+    [Return]    ${sSearchedData}
+
+Load TestData from Excel
+    [Arguments]    ${sSheetName}    ${sTestCaseName}    ${sComponentName}    ${sParamName}
+    Open given Excel file    ${sTestDataExcelName}
+    #Passing SheetName,RowDetails and ColumnName, to fetch data
+    ${sData}    Get data from Excel with given column name and testName    ${sSheetName}    ${sTestCaseName}    ${sComponentName}    ${sParamName}
+    Log    ${sData}    console=yes
+    [Return]    ${sData}
+
+Get data from Excel with given column name and testName
+    [Arguments]    ${sSheetName}    ${sTestCaseName}    ${sComponentName}    ${sParameterName}
+    Comment    log    ${sColumnName}    console=yes
+    ${rowCount}    ExcelLibrary.Get Row Count    ${sSheetName}
+    : FOR    ${rowNo}    IN RANGE    1    ${rowCount}
+    \    ${testNameFromRow}    Read Cell Data By Coordinates    ${sSheetName}    0    ${rowNo}
+    \    #Check if this is the given header
+    \    Run Keyword If    "${testNameFromRow}"=="${sTestCaseName}"    Set Suite Variable    ${testRowNo}    ${rowNo}
+    log    ${testRowNo}
+    #Get the total rows in the Sheet
+    ${columnCount}    Get Column Count    ${sSheetName}
+    : FOR    ${columnNo}    IN RANGE    2    ${columnCount}
+    \    ${componentName}    Read Cell Data By Coordinates    ${sSheetName}    ${columnNo}    0
+    \    ${parameterName}    Read Cell Data By Coordinates    ${sSheetName}    ${columnNo}    1
+    \    #Incase TestCase No is same , fetch the data from same row and given column No
+    \    ${sSearchedData}    Run Keyword If    "${sComponentName}"=="${componentName}" and "${sParameterName}" == "${parameterName}"    ExcelLibrary.Read Cell Data By Coordinates    ${sSheetName}    ${columnNo}
+    \    ...    ${testRowNo}
+    \    Run Keyword If    "${sComponentName}"=="${componentName}" and "${sParameterName}" == "${parameterName}"    Exit For Loop
+    [Return]    ${sSearchedData}
+
+Open given Excel file
+    [Arguments]    ${sFileName}
+    #Check that the given Excel Exists
+    ${inputfileStatus}    ${msg}    Run Keyword And Ignore Error    OperatingSystem.File Should Exist    ${sFileName}
+    Run Keyword If    "${inputfileStatus}"=="PASS"    Info    ${sFileName}    Test data file exist
+    ...    ELSE    Fail    Cannot locate the given Excel file.
+    Open Excel    ${sFileName}
+
+Send Data to Excel with given column
+    [Arguments]    ${sSheetName}    ${sTestCaseNo}    ${sColumnName}    ${Value}
+    Comment    log    ${sColumnName}    console=yes
+    Open Excel    ${sFileName}
+    ${colCount}    ExcelLibrary.Get Column Count    ${sSheetName}
+    : FOR    ${y}    IN RANGE    0    ${colCount}
+    \    ${header}    Read Cell Data By Coordinates    ${sSheetName}    ${y}    0
+    \    #Check if this is the given header
+    \    ${colNum}    Set Variable If    "${header}"=="${sColumnName}"    ${y}
+    \    Run Keyword If    "${header}"=="${sColumnName}"    Exit For Loop
+    \    Comment    Run Keyword If    "${header}"=="${sColumnName}"    Set Suite Variable    ${colNum}    ${y}
+    log    ${colNum}
+    #Get the total rows in the Sheet
+    ${iTotalRows}    ExcelLibrary.Get Row Count    ${sSheetName}
+    : FOR    ${iRowNo}    IN RANGE    1    ${iTotalRows}+1
+    \    ${TC_Num}    Read Cell Data By Coordinates    ${sSheetName}    0    ${iRowNo}
+    \    #Incase TestCase No is same , fetch the data from same row and given column No
+    \    log    ${iRowNo}
+    \    ${rowNum}    Set Variable If    "${sTestCaseNo}"=="${TC_Num}"    ${iRowNo}    \    ${EMPTY}
+    \    ...    ${Value}
+    \    Run Keyword If    "${sTestCaseNo}"=="${TC_Num}"    Exit For Loop
+    log    ${Value}
+    log    ${rowNum}
+    log    ${colNum}
+    log    ${Value}
+    ExcelLibrary.Put String To Cell    ${sSheetName}    ${colNum}    ${rowNum}    abc
+    log    Data is Entered
+
+Send Data To Excel File
+    [Arguments]    ${RowName}    ${ColumnName}    ${Data}
+    Open given Excel file    ${sFileName}
+    #Passing SheetName,RowDetails and ColumnName, to fetch data
+    Send Data to Excel with given column    Sheet1    ${RowName}    ${ColumnName}    ${Data}
+
+Element Should Be
+    [Arguments]    ${Widget}    ${Status}
+    Run Keyword If    "${Status}"==" DISABLED"    Element Should Be Disabled    ${Widget}
+    Run Keyword If    "${Status}"=="ENABLED"    Element Should Be Enabled    ${Widget}
+    Run Keyword If    "${Status}"==" VISIBLE"    Element Should Be Visible    ${Widget}
+    Run Keyword If    "${Status}"=="HIDDEN"    Element Should Not Be Visible    ${Widget}
+    #in case of Don't care do nothing

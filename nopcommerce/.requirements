@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.conformiq:RequirementRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.conformiq="http://www.conformiq.com/EMF/2/Requirements" lastUpdate="1615971444647">
+  <requirementGraphRoots identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-Requirements\Parabank Requirements-root" source="//@requirementProviders.0">
+    <name value="HP QC/ALM Requirements (Alexis:Requirements\Parabank Requirements)"/>
+    <priority/>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-65" source="//@requirementProviders.0" externalIdentifier="65">
+      <name value="Login Successfull and landed in Home Page"/>
+      <priority/>
+    </subrequirements>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-66" source="//@requirementProviders.0" externalIdentifier="66">
+      <name value="Login is Unsuccessfull due to invalie password or username"/>
+      <priority/>
+    </subrequirements>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-67" source="//@requirementProviders.0" externalIdentifier="67">
+      <name value="Admin Settings saved successfully"/>
+      <priority/>
+    </subrequirements>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-68" source="//@requirementProviders.0" externalIdentifier="68">
+      <name value="Your password is reset successfully. Your password is sent to your mail"/>
+      <priority/>
+    </subrequirements>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-69" source="//@requirementProviders.0" externalIdentifier="69">
+      <name value="Funds Transfer sucessfull"/>
+      <priority/>
+    </subrequirements>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-70" source="//@requirementProviders.0" externalIdentifier="70">
+      <name value="Loan request is processed"/>
+      <priority/>
+    </subrequirements>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-71" source="//@requirementProviders.0" externalIdentifier="71">
+      <name value="User Logged out of the account"/>
+      <priority/>
+    </subrequirements>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-72" source="//@requirementProviders.0" externalIdentifier="72">
+      <name value="New Account is Created and Approved"/>
+      <priority/>
+    </subrequirements>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-73" source="//@requirementProviders.0" externalIdentifier="73">
+      <name value="Funds Transfer is not successfull due to invalied amount or account details"/>
+      <priority/>
+    </subrequirements>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-74" source="//@requirementProviders.0" externalIdentifier="74">
+      <name value="Find Transaction using the Date is successfull"/>
+      <priority/>
+    </subrequirements>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-75" source="//@requirementProviders.0" externalIdentifier="75">
+      <name value="Find Transaction using the Amount is successfull"/>
+      <priority/>
+    </subrequirements>
+    <subrequirements identifier="com.conformiq.designer.extensions.alm-https://qc-122.conformiq.com/qcbin/-DEFAULT-Alexis-requirement-76" source="//@requirementProviders.0" externalIdentifier="76">
+      <name value="Bill Pay Use Registration is successful"/>
+      <priority/>
+    </subrequirements>
+  </requirementGraphRoots>
+  <requirementProviders identifier="com.conformiq.designer.extensions.alm" name="HP QC/ALM Requirements (Alexis:Requirements\Parabank Requirements)">
+    <properties key="alm.project" value="Alexis"/>
+    <properties key="alm.password" value="$CQPasswordEncoding4$07AjNkQB5uipDV3RSVDEX6fwd9OlOI+ghNWRDCcJdXJqOnHVjTPo2Q7WLBza7qkVfCIabP7+7iGhku5lZfKNCw=="/>
+    <properties key="alm.requirement.fields" value="rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAB3CAAAABAAAAAAeA=="/>
+    <properties key="alm.domain" value="DEFAULT"/>
+    <properties key="alm.username" value="siteadmin"/>
+    <properties key="alm.client.id"/>
+    <properties key="alm.location" value="https://qc-122.conformiq.com/qcbin/"/>
+    <properties key="alm.api.key.secret" value="$CQPasswordEncoding4$fN4D4b1iD9aAGH5tpTXrYA=="/>
+    <properties key="alm.requirement.namingtemplate" value="${fields[&quot;Name&quot;]}"/>
+    <properties key="aml.requirement.priorities" value="rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAB3CAAAABAAAAAAeA=="/>
+    <properties key="alm.requirement.folder" value="rO0ABXNyABNqYXZhLnV0aWwuQXJyYXlMaXN0eIHSHZnHYZ0DAAFJAARzaXpleHAAAAACdwQAAAACdAAMUmVxdWlyZW1lbnRzdAAVUGFyYWJhbmsgUmVxdWlyZW1lbnRzeA=="/>
+  </requirementProviders>
+</com.conformiq:RequirementRepository>

@@ -1,0 +1,321 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''
+'' OVERVIEW OF THE TEST HARNESS MAPPING FILE
+'' =========================================
+''
+'' Test harness file contains the adaptation of the application
+'' Conformiq generates a sequence of steps where each step is represented as
+'' a "keyword driven" call to "code". The purpose of the functions in
+'' this file is to invoke the actual application under the test
+'' This file has been automatically generated, and user have an option 
+'' to overwrite or not in the subsequent publication
+''
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'' ROUTINES FOR HARNESSING CONFORMIQ GENERATED TESTING LOGIC AND
+'' THE CONCRETE TEST LIBRARY
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Function CLICK_LOG_IN_BUTTON_LogIn(guiContext,guiData)
+    'This <CLICK_LOG_IN_BUTTON_LogIn(guiContext,guiData)> VB function implements (and inverts) the Creator 2 < CLICK LOG IN BUTTON LogIn >action
+    'Step1 : Store data locally
+
+              'CLICK_LOG_IN_BUTTON_LogIn= micWarning
+ 
+              LogIn_LOG_IN_BUTTON = guiContext("LogIn_LOG_IN_BUTTON")
+
+     'Step 2: Identify the actual objects for GUI context and put the proper VB code      or just uncomment this following example code if correct:                       '
+
+               'Browser("LogIn").Page("LogIn").WebButton("LOG IN").Click 
+
+          'Execute executeString
+
+          'Set Correct Return Code
+
+          'CLICK_LOG_IN_BUTTON_LogIn=micPass/ micFailed/ micWarning / micDone
+
+          f_WriteToDriverLogFile("Warning : Reached InComplete function < CLICK LOG IN BUTTON LogIn>- Please complete the implementation and remove this line once finished")
+
+End Function
+
+Function FILL_Shopping_Cart_FORM_Shopping_Cart(guiContext,guiData)
+    'This <FILL_Shopping_Cart_FORM_Shopping_Cart(guiContext,guiData)> VB function implements (and inverts) the Creator 2 < FILL Shopping Cart FORM Shopping Cart >action
+    'Step1 : Store data locally
+
+              'FILL_Shopping_Cart_FORM_Shopping_Cart= micWarning
+ 
+              Shopping_Cart_Shopping_Cart_Search_Store_TEXTBOX = guiData("Shopping_Cart_Shopping_Cart_Search_Store_TEXTBOX")
+              Shopping_Cart_Shopping_Cart_Search_Store_TEXTBOX_VALUE_TYPE = guiData("Shopping_Cart_Shopping_Cart_Search_Store_TEXTBOX_VALUE_TYPE")
+
+     'Step 2: Identify the actual objects for GUI context and put the proper VB code      or just uncomment this following example code if correct:                       '
+
+               'Browser("Shopping Cart").Page("Shopping Cart").WebEdit("Search Store").Set  Shopping_Cart_Shopping_Cart_Search_Store_TEXTBOX
+
+          'Execute executeString
+
+          'Set Correct Return Code
+
+          'FILL_Shopping_Cart_FORM_Shopping_Cart=micPass/ micFailed/ micWarning / micDone
+
+          f_WriteToDriverLogFile("Warning : Reached InComplete function < FILL Shopping Cart FORM Shopping Cart>- Please complete the implementation and remove this line once finished")
+
+End Function
+
+Function CLICK_Login_HYPERLINK_LogIn(guiContext,guiData)
+    'This <CLICK_Login_HYPERLINK_LogIn(guiContext,guiData)> VB function implements (and inverts) the Creator 2 < CLICK Login HYPERLINK LogIn >action
+    'Step1 : Store data locally
+
+              'CLICK_Login_HYPERLINK_LogIn= micWarning
+ 
+              LogIn_Login_HYPERLINK = guiContext("LogIn_Login_HYPERLINK")
+
+     'Step 2: Identify the actual objects for GUI context and put the proper VB code      or just uncomment this following example code if correct:                       '
+
+               'Browser("LogIn").Page("LogIn").Link("Login").Click 
+
+          'Execute executeString
+
+          'Set Correct Return Code
+
+          'CLICK_Login_HYPERLINK_LogIn=micPass/ micFailed/ micWarning / micDone
+
+          f_WriteToDriverLogFile("Warning : Reached InComplete function < CLICK Login HYPERLINK LogIn>- Please complete the implementation and remove this line once finished")
+
+End Function
+
+Function FILL_LogIn_FORM_LogIn(guiContext,guiData)
+    'This <FILL_LogIn_FORM_LogIn(guiContext,guiData)> VB function implements (and inverts) the Creator 2 < FILL LogIn FORM LogIn >action
+    'Step1 : Store data locally
+
+              'FILL_LogIn_FORM_LogIn= micWarning
+ 
+              LogIn_LogIn_Email_TEXTBOX = guiData("LogIn_LogIn_Email_TEXTBOX")
+              LogIn_LogIn_Email_TEXTBOX_VALUE_TYPE = guiData("LogIn_LogIn_Email_TEXTBOX_VALUE_TYPE")
+              LogIn_LogIn_Password_TEXTBOX = guiData("LogIn_LogIn_Password_TEXTBOX")
+              LogIn_LogIn_Password_TEXTBOX_VALUE_TYPE = guiData("LogIn_LogIn_Password_TEXTBOX_VALUE_TYPE")
+
+     'Step 2: Identify the actual objects for GUI context and put the proper VB code      or just uncomment this following example code if correct:                       '
+
+               'Browser("LogIn").Page("LogIn").WebEdit("Email").Set  LogIn_LogIn_Email_TEXTBOX
+               'Browser("LogIn").Page("LogIn").WebEdit("Password").Set  LogIn_LogIn_Password_TEXTBOX
+
+          'Execute executeString
+
+          'Set Correct Return Code
+
+          'FILL_LogIn_FORM_LogIn=micPass/ micFailed/ micWarning / micDone
+
+          f_WriteToDriverLogFile("Warning : Reached InComplete function < FILL LogIn FORM LogIn>- Please complete the implementation and remove this line once finished")
+
+End Function
+
+Function CLICK_Shopping_Cart_HYPERLINK_Home(guiContext,guiData)
+    'This <CLICK_Shopping_Cart_HYPERLINK_Home(guiContext,guiData)> VB function implements (and inverts) the Creator 2 < CLICK Shopping Cart HYPERLINK Home >action
+    'Step1 : Store data locally
+
+              'CLICK_Shopping_Cart_HYPERLINK_Home= micWarning
+ 
+              Home_Shopping_Cart_HYPERLINK = guiContext("Home_Shopping_Cart_HYPERLINK")
+
+     'Step 2: Identify the actual objects for GUI context and put the proper VB code      or just uncomment this following example code if correct:                       '
+
+               'Browser("Home").Page("Home").Link("Shopping Cart").Click 
+
+          'Execute executeString
+
+          'Set Correct Return Code
+
+          'CLICK_Shopping_Cart_HYPERLINK_Home=micPass/ micFailed/ micWarning / micDone
+
+          f_WriteToDriverLogFile("Warning : Reached InComplete function < CLICK Shopping Cart HYPERLINK Home>- Please complete the implementation and remove this line once finished")
+
+End Function
+
+Function VERIFY_Home_SCREEN(guiContext,guiData)
+    'This <VERIFY_Home_SCREEN(guiContext,guiData)> VB function implements (and inverts) the Creator 2 < VERIFY Home SCREEN >action
+    'Step1 : Store data locally
+
+              'VERIFY_Home_SCREEN= micWarning
+ 
+              Home_Shopping_Cart_HYPERLINK_STATUS = guiData("Home_Shopping_Cart_HYPERLINK_STATUS")
+              Home_Log_out_HYPERLINK_STATUS = guiData("Home_Log_out_HYPERLINK_STATUS")
+
+     'Step 2: Identify the actual objects for GUI context and put the proper VB code      or just uncomment this following example code if correct:                       '
+
+               'Browser("Home").Page("Home").Link("Shopping Cart").Check  Checkpoint("Shopping Cart")
+               'Browser("Home").Page("Home").Link("Log out").Check  Checkpoint("Log out")
+
+          'Execute executeString
+
+          'Set Correct Return Code
+
+          'VERIFY_Home_SCREEN=micPass/ micFailed/ micWarning / micDone
+
+          f_WriteToDriverLogFile("Warning : Reached InComplete function < VERIFY Home SCREEN>- Please complete the implementation and remove this line once finished")
+
+End Function
+
+Function VERIFY_LogIn_SCREEN(guiContext,guiData)
+    'This <VERIFY_LogIn_SCREEN(guiContext,guiData)> VB function implements (and inverts) the Creator 2 < VERIFY LogIn SCREEN >action
+    'Step1 : Store data locally
+
+              'VERIFY_LogIn_SCREEN= micWarning
+ 
+              LogIn_LogIn_Email_TEXTBOX = guiData("LogIn_LogIn_Email_TEXTBOX")
+              LogIn_LogIn_Email_TEXTBOX_VALUE_TYPE = guiData("LogIn_LogIn_Email_TEXTBOX_VALUE_TYPE")
+              LogIn_LogIn_Email_TEXTBOX_STATUS = guiData("LogIn_LogIn_Email_TEXTBOX_STATUS")
+              LogIn_LogIn_Password_TEXTBOX = guiData("LogIn_LogIn_Password_TEXTBOX")
+              LogIn_LogIn_Password_TEXTBOX_VALUE_TYPE = guiData("LogIn_LogIn_Password_TEXTBOX_VALUE_TYPE")
+              LogIn_LogIn_Password_TEXTBOX_STATUS = guiData("LogIn_LogIn_Password_TEXTBOX_STATUS")
+              LogIn_LogIn_LOG_IN_BUTTON_STATUS = guiData("LogIn_LogIn_LOG_IN_BUTTON_STATUS")
+              LogIn_LogIn_Login_HYPERLINK_STATUS = guiData("LogIn_LogIn_Login_HYPERLINK_STATUS")
+
+     'Step 2: Identify the actual objects for GUI context and put the proper VB code      or just uncomment this following example code if correct:                       '
+
+               'Browser("LogIn").Page("LogIn").WebEdit("Email").Check  Checkpoint("Email")
+               'Browser("LogIn").Page("LogIn").WebEdit("Password").Check  Checkpoint("Password")
+               'Browser("LogIn").Page("LogIn").WebButton("LOG IN").Check  Checkpoint("LOG IN")
+               'Browser("LogIn").Page("LogIn").Link("Login").Check  Checkpoint("Login")
+
+          'Execute executeString
+
+          'Set Correct Return Code
+
+          'VERIFY_LogIn_SCREEN=micPass/ micFailed/ micWarning / micDone
+
+          f_WriteToDriverLogFile("Warning : Reached InComplete function < VERIFY LogIn SCREEN>- Please complete the implementation and remove this line once finished")
+
+End Function
+
+Function VERIFY_Shopping_Cart_SCREEN(guiContext,guiData)
+    'This <VERIFY_Shopping_Cart_SCREEN(guiContext,guiData)> VB function implements (and inverts) the Creator 2 < VERIFY Shopping Cart SCREEN >action
+    'Step1 : Store data locally
+
+              'VERIFY_Shopping_Cart_SCREEN= micWarning
+ 
+              Shopping_Cart_Shopping_Cart_Search_Store_TEXTBOX = guiData("Shopping_Cart_Shopping_Cart_Search_Store_TEXTBOX")
+              Shopping_Cart_Shopping_Cart_Search_Store_TEXTBOX_VALUE_TYPE = guiData("Shopping_Cart_Shopping_Cart_Search_Store_TEXTBOX_VALUE_TYPE")
+              Shopping_Cart_Shopping_Cart_Search_Store_TEXTBOX_STATUS = guiData("Shopping_Cart_Shopping_Cart_Search_Store_TEXTBOX_STATUS")
+              Shopping_Cart_Shopping_Cart_SEARCH_BUTTON_STATUS = guiData("Shopping_Cart_Shopping_Cart_SEARCH_BUTTON_STATUS")
+
+     'Step 2: Identify the actual objects for GUI context and put the proper VB code      or just uncomment this following example code if correct:                       '
+
+               'Browser("Shopping Cart").Page("Shopping Cart").WebEdit("Search Store").Check  Checkpoint("Search Store")
+               'Browser("Shopping Cart").Page("Shopping Cart").WebButton("SEARCH").Check  Checkpoint("SEARCH")
+
+          'Execute executeString
+
+          'Set Correct Return Code
+
+          'VERIFY_Shopping_Cart_SCREEN=micPass/ micFailed/ micWarning / micDone
+
+          f_WriteToDriverLogFile("Warning : Reached InComplete function < VERIFY Shopping Cart SCREEN>- Please complete the implementation and remove this line once finished")
+
+End Function
+
+Function CLICK_SEARCH_BUTTON_Shopping_Cart(guiContext,guiData)
+    'This <CLICK_SEARCH_BUTTON_Shopping_Cart(guiContext,guiData)> VB function implements (and inverts) the Creator 2 < CLICK SEARCH BUTTON Shopping Cart >action
+    'Step1 : Store data locally
+
+              'CLICK_SEARCH_BUTTON_Shopping_Cart= micWarning
+ 
+              Shopping_Cart_SEARCH_BUTTON = guiContext("Shopping_Cart_SEARCH_BUTTON")
+
+     'Step 2: Identify the actual objects for GUI context and put the proper VB code      or just uncomment this following example code if correct:                       '
+
+               'Browser("Shopping Cart").Page("Shopping Cart").WebButton("SEARCH").Click 
+
+          'Execute executeString
+
+          'Set Correct Return Code
+
+          'CLICK_SEARCH_BUTTON_Shopping_Cart=micPass/ micFailed/ micWarning / micDone
+
+          f_WriteToDriverLogFile("Warning : Reached InComplete function < CLICK SEARCH BUTTON Shopping Cart>- Please complete the implementation and remove this line once finished")
+
+End Function
+
+Function PERFORM_Enterurl_ACTION(User,actionData)
+    'This <PERFORM_Enterurl_ACTION(User,actionData)> VB function implements (and inverts) the Creator 2 < PERFORM Enterurl ACTION >action
+    'Step1 : Store data locally
+
+              'PERFORM_Enterurl_ACTION= micWarning
+ 
+          User_actionDataurl = actionData("User_actionDataurl")
+          User_actionDataurl_VALUE_TYPE = actionData("User_actionDataurl_VALUE_TYPE")
+
+          'Execute executeString
+
+          'Set Correct Return Code
+
+          'PERFORM_Enterurl_ACTION=micPass/ micFailed/ micWarning / micDone
+
+          f_WriteToDriverLogFile("Warning : Reached InComplete function < PERFORM Enterurl ACTION>- Please complete the implementation and remove this line once finished")
+
+End Function
+
+Function VERIFY_Logg_SCREEN(guiContext,guiData)
+    'This <VERIFY_Logg_SCREEN(guiContext,guiData)> VB function implements (and inverts) the Creator 2 < VERIFY Logg SCREEN >action
+    'Step1 : Store data locally
+
+              'VERIFY_Logg_SCREEN= micWarning
+ 
+
+     'Step 2: Identify the actual objects for GUI context and put the proper VB code
+
+          'Execute executeString
+
+          'Set Correct Return Code
+
+          'VERIFY_Logg_SCREEN=micPass/ micFailed/ micWarning / micDone
+
+          f_WriteToDriverLogFile("Warning : Reached InComplete function < VERIFY Logg SCREEN>- Please complete the implementation and remove this line once finished")
+
+End Function
+
+Function global_Circumstance(extCircumstance)
+	Select Case extCircumstance
+	End Select
+End Function
+
+Function f_WriteToDriverLogFile(LogMsg)
+ Const ForAppending = 8
+ Set oFSO = CreateObject("Scripting.FileSystemObject")
+ 'Check if file already exists. If not, create it.
+ If oFSO.FileExists(Environment.Value("ResultDir") & "Conformiq QTP Test Execution log file.txt") = False Then
+         Set oFile = Nothing
+         Set oFile = oFSO.CreateTextFile(Environment.Value("ResultDir") & "Conformiq QTP Test Execution log file.txt",True)
+         Set oFile = Nothing
+         End If
+         Set oTxtFile = Nothing
+ Set oTxtFile = oFSO.OpenTextFile(Environment.Value("ResultDir") & "Conformiq QTP Test Execution log file.txt", ForAppending, True)
+ oTxtFile.WriteLine LogMsg
+ print LogMsg
+End Function
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'' ROUTINES FOR HANDLING TEST INFRASTRUCTURE
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Function START_TEST_SUITE(DcName)
+   ' Insert here the implementation
+End Function
+
+Function END_TEST_SUITE()
+    ' Insert here the implementation
+End Function
+
+Function START_TEST_CASE( testId, testName ) 
+   ' This function is called at beginning of every test and should be used to realize any system configuration or set up required to run a test.
+    ' Insert here the implementation
+End Function
+
+Function END_TEST_CASE( testId, testName ) 
+   ' This function is called at the end of every test and should be used to realize any system configuration or set up required to run a test.
+    ' Insert here the implementation
+End Function
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'' END OF CONFORMIQ GENERATED TEST HARNESS code
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+

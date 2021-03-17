@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuite" verbose="1">
+ <test name="TestCase1" >
+    <classes>
+      <class name="testsuite.INVALIDLOGIN_TC"/>
+    </classes>
+ </test>
+ <test name="TestCase2" >
+    <classes>
+      <class name="testsuite.INVALIDLOGIN_TC__2_"/>
+    </classes>
+ </test>
+ <test name="TestCase3" >
+    <classes>
+      <class name="testsuite.LOGOUT_TC"/>
+    </classes>
+ </test>
+</suite>

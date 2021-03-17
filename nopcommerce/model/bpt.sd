@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:com.conformiq.creator.structure.dsl="http://www.conformiq.com/emf/15/StructureDiagram" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0" xmi:id="_f21f1600-1510-41d8-b9e4-1272070e9de6" type="Dsl" name="bpt.sd" measurementUnit="Pixel">
+  <element xmi:type="com.conformiq.creator.structure.dsl:Model" href="bpt.sl#/" />
+  <children xmi:type="notation:Shape" xmi:id="_Timeline" type="Note" fontName="Segoe UI" description="This diagram was automatically generated from C:\Users\IB2k21003\Desktop\workgopi\nopcommerce\modelnopcommerce.xml on 17/03/2021 14:36:39 by HP ALM Test Plan Importer" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_6a3812cc181f40668218a341a50237f8" type="DiagramName">
+      <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="__b777355b61d346b9ab9b0c6bde067592" type="Description">
+      <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+    </children>
+    <styles xmi:type="notation:TextStyle" xmi:id="_c165588b6cf6423b9d5910ac156a0a73" />
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_c95231dfea0c4d39b60582ea9e27dd17" />
+    <element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__e82fb20090714a72957648e275b36242" x="100" y="100" />
+  </children>
+</notation:Diagram>
+
